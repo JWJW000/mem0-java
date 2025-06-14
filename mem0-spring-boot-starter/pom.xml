@@ -7,10 +7,11 @@
         <groupId>me.pgthinker</groupId>
         <artifactId>mem0-client-java</artifactId>
         <version>{revision}</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>mem0-spring-boot-starter</artifactId>
+    <name>mem0-spring-boot-starter</name>
+    <packaging>jar</packaging>
 
     <dependencies>
 
@@ -28,4 +29,34 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
