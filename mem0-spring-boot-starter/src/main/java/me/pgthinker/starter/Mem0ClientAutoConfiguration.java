@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -26,7 +27,9 @@ public class Mem0ClientAutoConfiguration {
 		SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
 		factory.setConnectTimeout(properties.getConnectTimeout());
 		factory.setReadTimeout(properties.getReadTimeout());
-		return new RestTemplate(factory);
+		RestTemplate restTemplate = new RestTemplate(factory);
+		restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+		return restTemplate;
 	}
 
 	@Bean
