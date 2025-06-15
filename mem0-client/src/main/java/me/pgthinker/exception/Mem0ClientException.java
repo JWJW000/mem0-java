@@ -1,13 +1,8 @@
 package me.pgthinker.exception;
 
-import org.springframework.http.HttpStatus;
-
 /**
- * @Project: me.pgthinker.starter
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/14 20:54
- * @Description:
+ * Project: me.pgthinker.starter Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/14 20:54 Description:
  */
 public class Mem0ClientException extends RuntimeException {
 

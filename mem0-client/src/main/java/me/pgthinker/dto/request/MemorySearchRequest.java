@@ -5,29 +5,45 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 /**
- * @Project: me.pgthinker.starter.dto.request
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/14 21:48
- * @Description:
+ * Project: me.pgthinker.starter.dto.request Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/14 21:48 Description:
  */
 public class MemorySearchRequest {
 
+	/**
+	 * query content.
+	 */
 	@JsonProperty("query")
 	private String query;
 
+	/**
+	 * memory's userId
+	 */
 	@JsonProperty("user_id")
 	private String userId;
 
+	/**
+	 * memory's runId
+	 */
 	@JsonProperty("run_id")
 	private String runId;
 
+	/**
+	 * memory's agentId
+	 */
 	@JsonProperty("agent_id")
 	private String agentId;
 
+	/**
+	 * filters. example: "filters": { "OR": [ { "user_id": "alex" }, { "agent_id": { "in":
+	 * ["travel-assistant", "customer-support"] } } ] }
+	 */
 	@JsonProperty("filters")
 	private Map<String, Object> filters;
 
+	/**
+	 * memory's size
+	 */
 	@JsonProperty("page_size")
 	private Integer pageSize = 100;
 

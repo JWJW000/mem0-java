@@ -17,11 +17,8 @@ import java.net.URI;
 import java.util.*;
 
 /**
- * @Project: me.pgthinker.starter
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/14 20:44
- * @Description:
+ * Project: me.pgthinker.starter Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/14 20:44 Description:
  */
 public class Mem0Client {
 

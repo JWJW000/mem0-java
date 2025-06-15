@@ -6,26 +6,38 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Project: me.pgthinker.starter.dto.request
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/14 21:37
- * @Description:
+ * Project: me.pgthinker.starter.dto.request Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/14 21:37 Description:
  */
 public class MemoryCreateRequest {
 
+	/**
+	 * memory message
+	 */
 	@JsonProperty("messages")
 	private List<Message> messages;
 
+	/**
+	 * memory's user_id
+	 */
 	@JsonProperty("user_id")
 	private String userId;
 
+	/**
+	 * memory's agent_id
+	 */
 	@JsonProperty("agent_id")
 	private String agentId;
 
+	/**
+	 * memory's run_id
+	 */
 	@JsonProperty("run_id")
 	private String runId;
 
+	/**
+	 * memory's metadata
+	 */
 	@JsonProperty("metadata")
 	private Map<String, Object> metadata;
 

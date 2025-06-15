@@ -6,8 +6,12 @@
 
     <groupId>me.pgthinker</groupId>
     <artifactId>mem0-client-java</artifactId>
-    <version>{revision}</version>
+    <version>${reversion}</version>
     <packaging>pom</packaging>
+
+    <name>mem0-client-java</name>
+    <description>mem0 client and java version</description>
+    <url>https://github.com/ningning0111/mem0-java</url>
 
     <licenses>
         <license>
@@ -36,7 +40,7 @@
     </modules>
 
     <properties>
-        <revision>0.1.0</revision>
+        <reversion>0.1.2</reversion>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -172,6 +176,12 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <gpgArguments>
+                        <arg>--pinentry-mode</arg>
+                        <arg>loopback</arg>
+                    </gpgArguments>
+                </configuration>
             </plugin>
         </plugins>
     </build>

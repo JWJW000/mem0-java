@@ -6,19 +6,22 @@
     <parent>
         <groupId>me.pgthinker</groupId>
         <artifactId>mem0-client-java</artifactId>
-        <version>{revision}</version>
+        <version>0.1.2</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>mem0-spring-boot-starter</artifactId>
     <name>mem0-spring-boot-starter</name>
+    <description>Spring Boot Starter for the mem0 memory client</description>
+    <url>https://github.com/ningning0111/mem0-java</url>
+
     <packaging>jar</packaging>
 
     <dependencies>
-
         <dependency>
             <groupId>me.pgthinker</groupId>
             <artifactId>mem0-client</artifactId>
-            <version>{revision}</version>
+            <version>${reversion}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -26,7 +29,9 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

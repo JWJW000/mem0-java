@@ -6,11 +6,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
- * @Project: me.pgthinker.starter.dto.response
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/15 00:53
- * @Description:
+ * Project: me.pgthinker.starter.dto.response Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/15 00:53 Description:
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResponseWrapper {

@@ -8,11 +8,8 @@ import org.springframework.http.client.ClientHttpResponse;
 import java.io.IOException;
 
 /**
- * @Project: me.pgthinker.starter.interceptor
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/14 23:15
- * @Description:
+ * Project: me.pgthinker.starter.interceptor Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/14 23:15 Description:
  */
 public class Mem0AuthInterceptor implements ClientHttpRequestInterceptor {
 

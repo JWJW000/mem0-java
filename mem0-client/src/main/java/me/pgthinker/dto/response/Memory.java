@@ -6,11 +6,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 /**
- * @Project: me.pgthinker.starter.dto
- * @Author: NingNing0111
- * @Github: https://github.com/ningning0111
- * @Date: 2025/6/14 21:36
- * @Description:
+ * Project: me.pgthinker.starter.dto Author: NingNing0111 GitHub:
+ * https://github.com/ningning0111 Date: 2025/6/14 21:36 Description:
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Memory {
