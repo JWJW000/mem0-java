@@ -22,7 +22,7 @@ Maven
 <dependency>
     <groupId>me.pgthinker</groupId>
     <artifactId>mem0-client</artifactId>
-    <version>0.1.2</version>
+    <version>{VERSION}</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ Maven
 <dependency>
     <groupId>me.pgthinker</groupId>
     <artifactId>mem0-spring-boot-starter</artifactId>
-    <version>0.1.2</version>
+    <version>{VERSION}</version>
 </dependency>
 ```
 
