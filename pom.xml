@@ -148,7 +148,7 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <goals>
+           git             <goals>
                             <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
